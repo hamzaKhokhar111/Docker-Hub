@@ -19,7 +19,7 @@ connectDB();
 
 app.use('/api/user',router)
 
-app.listen(3000,()=>{
+app.listen(5000,()=>{
    console.log("Server is running at Port 3000")
 })
 
@@ -33,4 +33,4 @@ app.use((err,req,resp,next)=>{
         statuscode,
         message,
     });
-});
+}); 

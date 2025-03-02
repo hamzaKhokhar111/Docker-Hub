@@ -15,7 +15,7 @@ function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const resp = await fetch("http://localhost:3000/api/user/signup", { // ✅ Fixed API endpoint
+            const resp = await fetch("http://localhost:5000/api/user/signup", { // ✅ Fixed API endpoint
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
