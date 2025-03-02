@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe("pk_test_51Pg9AiRusTI08ErCzBfrN1XzFvjy2juo60Uck6Ln3iq5mKsP9giBWG8Os68rtEs9JX0WTGkeLlqEW0bMqBu9efTa00YnSgPBdl");
+const stripePromise = loadStripe("use publish keya");
 
 function Home() {
   const [product, setproduct] = useState({

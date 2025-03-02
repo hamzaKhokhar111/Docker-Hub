@@ -5,7 +5,7 @@ const router=express.Router();
 const bcryptjs=require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
 
-const stripe=require('stripe')("sk_test_51Pg9AiRusTI08ErCB35EHrK139eLVdMK5AFkbAXrGB8RNhHmtU1plCI5u3PMN3wXs9hGGK4lhl1pIUchkHNQl2YM00JshCRAFm ")
+const stripe=require('stripe')("use secret key")
 
 router.post('/signup',async(req,resp,next)=>{
     const {username,email,password}=req.body;
